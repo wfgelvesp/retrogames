@@ -1,1 +1,86 @@
-/**Style*/
+body {
+  background: "./image/top-gear-capa.jpg";
+  background-color: black;
+}
+.title {
+  color: #fcfafa;
+  font-size: 80px;
+  text-align: center;
+}
+
+.info {
+  text-align: justify;
+  width: 600px;
+  height: 400px;
+  padding: 30px 120px;
+  margin-top: 32px;
+  background-color: #023636;
+  margin-left: 350px;
+}
+
+.description {
+  color: #f8f6f6;
+  font-size: 20px;
+  padding: 10px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.img {
+  padding: 50px 420px;
+  align-items: center;
+}
+
+.tg {
+  width: 700px;
+  height: 450px;
+  padding: 40px 10px;
+}
+
+.infomusic {
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+.music {
+  align-items: center;
+  width: 1450px;
+  height: 100px;
+}
+
+.inftext {
+  padding: 50px 30px;
+  margin-top: 30px;
+  float: none;
+}
+
+.text {
+  padding: 20px 30px;
+  margin-top: 20px;
+  background-color: #023636;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text1 {
+  color: #fcfafa;
+  font-size: 20px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text2 {
+  color: #fcfafa;
+  font-size: 20px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+}
+#imagen {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
