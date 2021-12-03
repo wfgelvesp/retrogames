@@ -1,1 +1,194 @@
-/**Style*/
+body {
+    margin: 0;
+  }
+  
+  .toasty {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    bottom: -12px;
+    right: -200px;
+    transition: all 0.2s ease-in-out;
+  }
+  .toasty img {
+    width: 150px;
+  }
+  
+  .finish-text img {
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: -200px;
+  }
+  
+  .toast-active {
+    right: -12px;
+  }
+  
+  .level {
+    background: url(https://i.ytimg.com/vi/bjqa3yw_OwQ/maxresdefault.jpg);
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-size: cover;
+  }
+  
+  .player {
+    margin: 30px;
+    bottom: 0;
+    position: absolute;
+  }
+  
+  .life-bar {
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+    height: 30px;
+  }
+  .life-bar .bar {
+    position: absolute;
+    width: 45%;
+    height: 28px;
+    border: solid 1px #fff;
+    background: rgba(0, 0, 255, 0.6);
+  }
+  .life-bar .bar .player-name {
+    position: absolute;
+    padding: 5px;
+    color: #fff;
+  }
+  .life-bar .bar .speed {
+    position: absolute;
+    width: 20%;
+    height: 10px;
+    bottom: -12px;
+    background: rgba(0, 255, 0, 0.6);
+    border: 1px solid #fff;
+  }
+  .life-bar .bar-p1:before {
+    position: absolute;
+    content: "";
+    background: rgba(255, 0, 0, 0.8);
+    width: 23%;
+    height: 28px;
+    right: 0;
+  }
+  .life-bar .bar-p2 {
+    left: 55%;
+  }
+  .life-bar .bar-p2 .player-name {
+    right: 0;
+  }
+  .life-bar .bar-p2 .speed {
+    right: 0;
+  }
+  .life-bar .bar-p2:before {
+    position: absolute;
+    content: "";
+    background: rgba(255, 0, 0, 0.8);
+    width: 80%;
+    height: 28px;
+  }
+  
+  .p1 {
+    left: 10%;
+  }
+  
+  .p2 {
+    right: 10%;
+    -webkit-filter: hue-rotate(90deg) contrast(1.1);
+    filter: hue-rotate(90deg) contrast(1.1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  
+  .versus-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .versus-screen .versus {
+    transition: all 0.2s ease-in-out;
+  }
+  .versus-screen .versus img {
+    height: 60%;
+    position: fixed;
+    bottom: 0;
+  }
+  .versus-screen .versus-p1 img {
+    animation: versus-animation-p1 1.5s;
+  }
+  .versus-screen .versus-p2 img {
+    animation: versus-animation-p2 1.5s;
+    right: 0;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  
+  .game {
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    transition: all 5s ease-in-out;
+  }
+  
+  .game-started {
+    background: transparent;
+  }
+  
+  @-webkit-keyframes versus-animation-p2 {
+    0% {
+      right: -500px;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  @keyframes versus-animation-p2 {
+    0% {
+      right: -500px;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  @-webkit-keyframes versus-animation-p1 {
+    0% {
+      left: -500px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes versus-animation-p1 {
+    0% {
+      left: -500px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  h1{
+     text-align: center;
+     font-size: 50px;
+     color:rgb(255, 255, 255); 
+  }
+  
+    p {
+        color: rgb(255, 255, 255);
+      text-align: center;
+        background-color: rgb(0, 0, 0);
+        filter: alpha(opacity=60);
+        opacity: 0.6;
+      }
