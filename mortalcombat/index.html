@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Mortal Kombat </title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    
+<!-- partial:index.partial.html -->
+<html ng-app="app">
+	<body ng-controller="toastCtrl" ng-keyup="control($event)">
+		<div class="level">
+			<div class="versus-screen" ng-if="loader">
+                <h1>Siesoft</h1>
+				<div class="versus versus-p1">
+					<img src="{{plyaers.p1.versusImage}}"/>
+				</div>
+				<div class="versus versus-p2">
+					<img src="{{plyaers.p2.versusImage}}"/>
+				</div>
+			</div>
+            
+			<div class="game" ng-if="!loader" ng-class="{'game-started': !loader}">
+				<div class="life-bar">
+				<div class="bar bar-p1">
+					<div class="player-name">{{plyaers.p1.name}}</div>
+					<div class="speed"></div>
+				</div>
+                
+				<div class="finish-text" ng-if="finish.action">
+					<img src="{{finish.action}}"/>
+				</div>
+				<div class="bar bar-p2">
+					<div class="player-name">{{plyaers.p2.name}}</div>
+					<div class="speed"></div>
+				</div>
+                <h1>Siesoft</h1>
+                <p>es un videojuego de lucha desarrollado y publicado por Midway en 1992<br>
+                    El juego introdujo varias características clave de la serie <br>
+                    como los controles únicos de cinco botones y los movimientos sangrientos finales. <br>
+                    La historia se centra en la travesía de Liu Kang para salvar al mundo del malvado hechicero Shang Tsung<br>
+                    travesía que acaba con su enfrentamiento en el torneo llamado Mortal Kombat
+                </p>
+                
+			</div>
+				
+				<img class="player p1" src="{{plyaers.p1.sprite}}"/>
+						<img class="player p2" src="{{plyaers.p2.sprite}}"/>
+				<div class="toasty" ng-class="{'toast-active': toast}">
+					<img src="http://img1.reactor.cc/pics/comment/Renaissance-Mortal-Kombat-%D0%98%D0%B3%D1%80%D1%8B-Scorpion-1626631.png">
+				</div>
+				
+				<div class="comands">
+					<button class="btn btn-toasty" ng-click="showDanForden()">
+						Show Dan Forden
+					</button>
+					<button class="btn btn-toasty" ng-click="showFinish()">
+							Show finish
+					</button>
+				</div>
+			</div>
+		</div>
+				
+	</body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
