@@ -1,1 +1,43 @@
-/**Style*/
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+#titulo{
+    background-color: black;
+}
+
+img{
+    border: 10px solid;
+    border-color: #ffffff;
+    margin-left: 20px;
+    height: 340px;
+    width: 480px;
+}
+
+#info{
+    background-color: #84b64c;
+    text-align: justify;
+    width:740px; 
+    height: 390px;
+    float:right;
+    margin-right: 40px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#separator{
+    background-color: black;
+    margin-top: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+}
+iframe{
+    width:560px;
+    height:315px;
+    margin-left: 400px;
+    margin-top: 30px;
+    border: 10px solid;
+    border-color: #ffffff;
+}
