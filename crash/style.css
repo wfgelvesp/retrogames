@@ -721,7 +721,7 @@ a:focus {
     font-weight: 600;
 }
 
-.footer .copyright p a:hover {
+.footer .copyright p a:hover { 
     color: #414141;
 }
 
