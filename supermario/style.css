@@ -1,1 +1,54 @@
-/**Style*/
+.container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.5fr 0.8fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "head head head"
+    ". history ."
+    "tryGame tryGame tryGame";
+}
+
+.head {
+  grid-area: head;
+  display: grid;
+  place-items: center;
+}
+
+.history {
+  grid-area: history;
+  place-items: history;
+}
+
+.tryGame {
+  grid-area: tryGame;
+  display: grid;
+}
+.imgLogo {
+  width: 500px;
+  height: 150px;
+}
+
+body {
+  background: #ff0000;
+}
+
+.textHistory{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: initial;
+    margin: 8% 5% ;
+}
+.contentTextHistory{
+    background: #ffffffe3;
+    margin: 8% 8% ;
+}
+.tittleHistory{
+    font-family: sans-serif;
+    font-style: oblique;
+    text-align: center;
+}
+.butt{
+    display: grid;
+    margin: 0 auto;
+}
