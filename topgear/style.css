@@ -1,13 +1,7 @@
 body {
-  background: "./image/top-gear-capa.jpg";
   background-color: black;
+  background-image: url("http://playingwithsuperpower.com/wp-content/uploads/2014/08/Top-Gear-1.png");
 }
-.title {
-  color: #fcfafa;
-  font-size: 80px;
-  text-align: center;
-}
-
 .info {
   text-align: justify;
   width: 600px;
